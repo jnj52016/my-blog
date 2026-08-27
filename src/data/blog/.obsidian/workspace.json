@@ -185,8 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 283.9000244140625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cc794dab033a50b8",
+  "active": "96183e72896e4704",
   "lastOpenFiles": [
     "模板.md",
     "模板 1.md",
