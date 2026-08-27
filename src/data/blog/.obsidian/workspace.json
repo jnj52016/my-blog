@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "05a545db59f13a96",
+        "id": "086d933a7a2d1c58",
         "type": "tabs",
         "children": [
           {
-            "id": "cc794dab033a50b8",
+            "id": "8f77eed38ce11f9d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "src/data/blog/模板 1.md",
-                "bFile": "src/data/blog/模板 1.md",
-                "aRef": ""
+                "file": "模板 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 模板 1  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "模板 1"
             }
           }
         ]
@@ -196,7 +196,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cc794dab033a50b8",
+  "active": "8f77eed38ce11f9d",
   "lastOpenFiles": [
     "模板.md",
     "模板 1.md",
