@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "模板.md",
+                "file": "模板 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "模板"
+              "title": "模板 1"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "模板.md",
+                "file": "模板 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "模板.md",
+                "file": "模板 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "模板.md",
+                "file": "模板 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -200,11 +200,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b33d11de244a52b",
+  "active": "cc794dab033a50b8",
   "lastOpenFiles": [
+    "模板.md",
     "模板 1.md",
     "start-writing-in-public.md",
-    "模板.md",
     "small-projects-big-feedback.md",
     "build-a-learning-system 1.md",
     "未命名.md"
