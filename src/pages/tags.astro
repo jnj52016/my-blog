@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { posts } from '../lib/posts';
+const tags = [...new Set(posts.flatMap(post => post.tags))];
+---
+<BaseLayout title="标签 · 留白">
+  <section class="page"><p class="eyebrow">Topics</p><h1>标签</h1><div class="tags">{tags.map(tag => <a id={tag} class="tag" href={`#${tag}`}>{tag}</a>)}</div></section>
+</BaseLayout>
+<style>.page { max-width:720px; margin:40px auto; } h1 { font-size:3rem; margin:5px 0 28px; } .tag { margin-bottom:10px; }</style>

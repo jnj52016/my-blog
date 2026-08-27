@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { posts, formatDate } from '../../lib/posts';
+export function getStaticPaths() { return posts.map(post => ({ params: { slug: post.slug }, props: { post } })); }
+const { post } = Astro.props;
+---
+<BaseLayout title={`${post.title} · 留白`} description={post.description}>
+  <article class="post">
+    <a class="back" href="/">← 返回文章列表</a>
+    <p class="eyebrow">{formatDate(post.date)} · {post.readingTime}</p>
+    <h1>{post.title}</h1>
+    <p class="lead">{post.description}</p>
+    <div class="tags">{post.tags.map(tag => <a class="tag" href={`/tags#${tag}`}>{tag}</a>)}</div>
+    <div class="content">{post.content.map(paragraph => <p>{paragraph}</p>)}</div>
+  </article>
+</BaseLayout>
+<style>
+  .post { max-width:720px; margin:24px auto; } .back { color:var(--muted); font-size:.88rem; }
+  .eyebrow { margin:60px 0 12px; } h1 { font-size:clamp(2.3rem,5vw,4rem); letter-spacing:-.055em; line-height:1.28; margin:0; }
+  .lead { color:var(--muted); font-size:1.14rem; margin:18px 0; } .tags { margin-bottom:52px; }
+  .content { font-size:1.08rem; } .content p { margin:0 0 24px; }
+</style>
