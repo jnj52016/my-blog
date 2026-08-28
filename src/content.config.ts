@@ -2,7 +2,8 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/data/blog' }),
+  // Obsidian's writing templates live in `模板/`; exclude them from published posts.
+  loader: glob({ pattern: ['**/*.md', '!模板/**'], base: './src/data/blog' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
