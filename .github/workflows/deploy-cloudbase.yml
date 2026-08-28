@@ -36,8 +36,20 @@ jobs:
       - name: Install CloudBase CLI
         run: npm install -g @cloudbase/cli
 
+      - name: Validate deployment secrets
+        shell: bash
+        run: |
+          test -n "$TCB_SECRET_ID" || { echo "Missing TCB_SECRET_ID"; exit 1; }
+          test -n "$TCB_SECRET_KEY" || { echo "Missing TCB_SECRET_KEY"; exit 1; }
+          test -n "$TCB_ENV_ID" || { echo "Missing TCB_ENV_ID"; exit 1; }
+        env:
+          TCB_SECRET_ID: ${{ secrets.TCB_SECRET_ID }}
+          TCB_SECRET_KEY: ${{ secrets.TCB_SECRET_KEY }}
+          TCB_ENV_ID: ${{ secrets.TCB_ENV_ID }}
+
       - name: Authenticate with CloudBase
-        run: tcb login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY"
+        timeout-minutes: 2
+        run: tcb login --key --secretId "$TCB_SECRET_ID" --secretKey "$TCB_SECRET_KEY"
         env:
           TCB_SECRET_ID: ${{ secrets.TCB_SECRET_ID }}
           TCB_SECRET_KEY: ${{ secrets.TCB_SECRET_KEY }}
