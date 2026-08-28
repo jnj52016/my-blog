@@ -12,20 +12,27 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   <body>
     <header class="site-header">
       <a class="brand" href="/">博客<span>.</span></a>
-      <nav aria-label="主导航">
-        <a href="/">文章</a>
-        <a href="/tags">标签</a>
-        <a href="/about">关于</a>
-      </nav>
+      <div class="header-right">
+        <div class="author">
+          <span class="by">by</span>
+          <span class="author-name">蝙蝠</span>
+          <img src="/bat-avatar.png" width="44" height="44" alt="蝙蝠的头像" />
+        </div>
+        <nav aria-label="主导航">
+          <a href="/">文章</a>
+          <a href="/tags">标签</a>
+          <a href="/about">关于</a>
+        </nav>
+      </div>
     </header>
     <main><slot /></main>
-    <footer>© {new Date().getFullYear()} 留白 · 认真生活，缓慢生长。</footer>
+    <footer>© {new Date().getFullYear()} 蝙蝠 · 认真生活，缓慢生长。</footer>
   </body>
 </html>
 
 <style is:global>
   @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@900&family=Noto+Serif+SC:wght@400;600;700&display=swap');
-  :root { color-scheme:light dark; --ink:#282c35; --title:#222; --muted:#6f737a; --paper:#fff; --accent:#d23669; --accent-soft:rgba(210,54,105,.1); --code-bg:#232936; --inline-code-bg:rgba(255,229,100,.2); --inline-code-text:#1a1a1a; --brand-end:#6d43a6; }
+  :root { color-scheme:light dark; --ink:#282c35; --title:#222; --muted:#6f737a; --paper:#fff; --accent:#94141c; --accent-hover:#65080e; --accent-soft:rgba(148,20,28,.11); --code-bg:#232936; --inline-code-bg:rgba(148,20,28,.1); --inline-code-text:#401014; --brand-red:#e10600; }
   * { box-sizing:border-box; }
   html { background:var(--paper); }
   body { min-height:100vh; margin:0; background:var(--paper); color:var(--ink); font-family:'Merriweather','Noto Serif SC',Georgia,serif; font-size:16px; line-height:1.75; text-rendering:optimizeLegibility; }
@@ -33,9 +40,15 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   a { color:inherit; text-decoration:none; transition:color .15s ease; }
   a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
   h1,h2,h3 { color:var(--title); font-family:'Merriweather','Noto Serif SC',Georgia,serif; font-weight:700; }
-  .site-header { max-width:740px; min-height:112px; margin:auto; padding:54px 24px 20px; display:flex; align-items:flex-end; justify-content:space-between; gap:24px; }
-  .brand { background:linear-gradient(45deg,var(--accent),var(--brand-end)); background-clip:text; color:transparent; font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.75rem; font-weight:900; letter-spacing:-.045em; }
-  .brand span { color:inherit; }
+  .site-header { max-width:740px; min-height:132px; margin:auto; padding:48px 24px 26px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
+  .brand { position:relative; display:inline-block; color:var(--brand-red); font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.85rem; font-weight:900; letter-spacing:-.055em; }
+  .brand::after { position:absolute; left:-8px; bottom:-22px; width:132px; height:26px; background:url('/blood-smear.png') center/contain no-repeat; content:''; opacity:.72; pointer-events:none; }
+  .brand span { color:var(--accent); }
+  .header-right { display:flex; flex-direction:column; align-items:flex-end; gap:9px; }
+  .author { display:flex; align-items:center; gap:8px; color:var(--title); font-size:.88rem; }
+  .author .by { font-style:italic; }
+  .author-name { font-weight:700; }
+  .author img { width:44px; height:44px; border:2px solid rgba(148,20,28,.35); border-radius:50%; background:#fff; object-fit:cover; }
   nav { display:flex; gap:20px; font-size:.82rem; }
   nav a { color:var(--muted); }
   nav a:hover { color:var(--accent); }
@@ -45,7 +58,7 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   .tag { display:inline-block; margin-right:10px; color:var(--accent); font-size:.75rem; }
   .tag::before { content:'#'; }
   .tag:hover { text-decoration:underline; text-underline-offset:3px; }
-  @media (prefers-color-scheme:dark) { :root { --ink:rgba(255,255,255,.88); --title:#fff; --muted:#aab0bb; --paper:#282c35; --accent:#ffa7c4; --accent-soft:rgba(255,167,196,.16); --code-bg:#191d27; --inline-code-bg:rgba(115,124,153,.2); --inline-code-text:#e6e6e6; --brand-end:#cbb6ff; } body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; } }
-  @media (max-width:600px) { .site-header { min-height:92px; padding:38px 20px 16px; align-items:center; } .brand { font-size:1.55rem; } nav { gap:14px; font-size:.76rem; } main { padding:12px 20px 58px; } footer { padding:24px 20px 34px; } }
+  @media (prefers-color-scheme:dark) { :root { --ink:rgba(255,255,255,.88); --title:#fff; --muted:#aab0bb; --paper:#282c35; --accent:#e14a50; --accent-hover:#ff6a70; --accent-soft:rgba(225,74,80,.15); --code-bg:#191d27; --inline-code-bg:rgba(225,74,80,.14); --inline-code-text:#ffd9da; --brand-red:#ff2a20; } body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; } .author img { border-color:rgba(225,74,80,.55); } }
+  @media (max-width:600px) { .site-header { min-height:118px; padding:34px 20px 20px; } .brand { font-size:1.55rem; } .brand::after { width:108px; bottom:-20px; } .header-right { gap:7px; } .author { gap:6px; font-size:.78rem; } .author img { width:38px; height:38px; } nav { gap:12px; font-size:.72rem; } main { padding:12px 20px 58px; } footer { padding:24px 20px 34px; } }
   @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition:none !important; } }
 </style>
