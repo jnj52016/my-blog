@@ -12,7 +12,7 @@ const { Content } = await render(post);
 <BaseLayout title={`${post.data.title} · 留白`} description={post.data.description}>
   <article class="post">
     <a class="back" href="/">← 返回文章列表</a>
-    <p class="eyebrow">{formatDate(post.data.pubDate)}</p>
+    <p class="eyebrow">更新于 {formatDate(post.data.updatedDate ?? post.data.pubDate)}</p>
     <h1>{post.data.title}</h1>
     <p class="lead">{post.data.description}</p>
     <div class="tags">{post.data.tags.map(tag => <a class="tag" href={`/tags#${tag}`}>{tag}</a>)}</div>

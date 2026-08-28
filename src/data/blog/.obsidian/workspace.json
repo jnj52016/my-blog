@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "我的技术栈.md",
+                "file": "模板/新文章.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "我的技术栈"
+              "title": "新文章"
             }
           }
         ]
@@ -199,11 +199,12 @@
   },
   "active": "8f77eed38ce11f9d",
   "lastOpenFiles": [
-    "总之就是部署了一个博客.md",
+    "模板",
     "我的技术栈.md",
+    "模板/新文章.md",
+    "总之就是部署了一个博客.md",
     "start-writing-in-public.md",
     "small-projects-big-feedback.md",
-    "build-a-learning-system 1.md",
-    "未命名.md"
+    "build-a-learning-system 1.md"
   ]
 }
