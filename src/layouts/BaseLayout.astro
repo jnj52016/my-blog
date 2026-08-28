@@ -40,7 +40,7 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
   h1,h2,h3 { color:var(--title); font-family:'Merriweather','Noto Serif SC',Georgia,serif; font-weight:700; }
   .site-header { max-width:740px; min-height:132px; margin:auto; padding:48px 24px 26px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
-  .brand { position:relative; display:inline-block; background-image:url('/blood-veins.png'),linear-gradient(180deg,var(--blood-mid),var(--blood-shadow)); background-position:center,center; background-size:118px 118px,100% 100%; background-repeat:repeat,no-repeat; background-blend-mode:screen,normal; background-clip:text; -webkit-background-clip:text; color:transparent; filter:drop-shadow(0 1px 0 rgba(87,0,6,.28)); font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.85rem; font-weight:900; letter-spacing:-.055em; }
+  .brand { position:relative; display:inline-block; color:var(--blood-mid); filter:drop-shadow(0 1px 0 rgba(87,0,6,.28)); font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.85rem; font-weight:900; letter-spacing:-.055em; }
   .brand::after { position:absolute; left:-8px; bottom:-22px; width:132px; height:26px; background:url('/blood-smear.png') center/contain no-repeat; content:''; opacity:.68; pointer-events:none; transform-origin:center; animation:blood-pulse 3.4s ease-in-out infinite; }
   .brand span { position:relative; z-index:2; color:var(--accent); }
   @keyframes blood-pulse { 0%,100% { opacity:.55; transform:scaleX(.98); } 50% { opacity:.82; transform:scaleX(1.03); } }
