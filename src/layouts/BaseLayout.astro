@@ -32,7 +32,7 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
 
 <style is:global>
   @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@900&family=Noto+Serif+SC:wght@400;600;700&display=swap');
-  :root { color-scheme:light dark; --ink:#282c35; --title:#222; --muted:#6f737a; --paper:#fff; --accent:#94141c; --accent-hover:#65080e; --accent-soft:rgba(148,20,28,.11); --code-bg:#232936; --inline-code-bg:rgba(148,20,28,.1); --inline-code-text:#401014; --brand-red:#e10600; }
+  :root { color-scheme:light dark; --ink:#282c35; --title:#222; --muted:#6f737a; --paper:#fff; --accent:#94141c; --accent-hover:#65080e; --accent-soft:rgba(148,20,28,.11); --code-bg:#232936; --inline-code-bg:rgba(148,20,28,.1); --inline-code-text:#401014; --blood-highlight:#ff3b30; --blood-mid:#d70808; --blood-shadow:#570006; }
   * { box-sizing:border-box; }
   html { background:var(--paper); }
   body { min-height:100vh; margin:0; background:var(--paper); color:var(--ink); font-family:'Merriweather','Noto Serif SC',Georgia,serif; font-size:16px; line-height:1.75; text-rendering:optimizeLegibility; }
@@ -41,9 +41,11 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
   h1,h2,h3 { color:var(--title); font-family:'Merriweather','Noto Serif SC',Georgia,serif; font-weight:700; }
   .site-header { max-width:740px; min-height:132px; margin:auto; padding:48px 24px 26px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
-  .brand { position:relative; display:inline-block; color:var(--brand-red); font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.85rem; font-weight:900; letter-spacing:-.055em; }
-  .brand::after { position:absolute; left:-8px; bottom:-22px; width:132px; height:26px; background:url('/blood-smear.png') center/contain no-repeat; content:''; opacity:.72; pointer-events:none; }
+  .brand { position:relative; display:inline-block; background:linear-gradient(100deg,var(--blood-shadow) 0%,var(--blood-mid) 16%,var(--blood-highlight) 28%,var(--blood-mid) 40%,var(--blood-shadow) 55%,var(--blood-highlight) 70%,var(--blood-mid) 84%,var(--blood-shadow) 100%); background-size:260% 100%; background-clip:text; -webkit-background-clip:text; color:transparent; filter:drop-shadow(0 1px 0 rgba(87,0,6,.28)); font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.85rem; font-weight:900; letter-spacing:-.055em; animation:blood-flow 3.4s linear infinite; }
+  .brand::after { position:absolute; left:-8px; bottom:-22px; width:132px; height:26px; background:url('/blood-smear.png') center/contain no-repeat; content:''; opacity:.68; pointer-events:none; transform-origin:center; animation:blood-pulse 3.4s ease-in-out infinite; }
   .brand span { color:var(--accent); }
+  @keyframes blood-flow { from { background-position:100% 50%; } to { background-position:-160% 50%; } }
+  @keyframes blood-pulse { 0%,100% { opacity:.55; transform:scaleX(.98); } 50% { opacity:.82; transform:scaleX(1.03); } }
   .header-right { display:flex; flex-direction:column; align-items:flex-end; gap:9px; }
   .author { display:flex; align-items:center; gap:8px; color:var(--title); font-size:.88rem; }
   .author .by { font-style:italic; }
@@ -58,7 +60,7 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   .tag { display:inline-block; margin-right:10px; color:var(--accent); font-size:.75rem; }
   .tag::before { content:'#'; }
   .tag:hover { text-decoration:underline; text-underline-offset:3px; }
-  @media (prefers-color-scheme:dark) { :root { --ink:rgba(255,255,255,.88); --title:#fff; --muted:#aab0bb; --paper:#282c35; --accent:#e14a50; --accent-hover:#ff6a70; --accent-soft:rgba(225,74,80,.15); --code-bg:#191d27; --inline-code-bg:rgba(225,74,80,.14); --inline-code-text:#ffd9da; --brand-red:#ff2a20; } body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; } .author img { border-color:rgba(225,74,80,.55); } }
+  @media (prefers-color-scheme:dark) { :root { --ink:rgba(255,255,255,.88); --title:#fff; --muted:#aab0bb; --paper:#282c35; --accent:#e14a50; --accent-hover:#ff6a70; --accent-soft:rgba(225,74,80,.15); --code-bg:#191d27; --inline-code-bg:rgba(225,74,80,.14); --inline-code-text:#ffd9da; --blood-highlight:#ff4a42; --blood-mid:#d8141c; --blood-shadow:#69050b; } body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; } .author img { border-color:rgba(225,74,80,.55); } }
   @media (max-width:600px) { .site-header { min-height:118px; padding:34px 20px 20px; } .brand { font-size:1.55rem; } .brand::after { width:108px; bottom:-20px; } .header-right { gap:7px; } .author { gap:6px; font-size:.78rem; } .author img { width:38px; height:38px; } nav { gap:12px; font-size:.72rem; } main { padding:12px 20px 58px; } footer { padding:24px 20px 34px; } }
-  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition:none !important; } }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition:none !important; animation:none !important; } }
 </style>
