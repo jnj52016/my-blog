@@ -26,7 +26,6 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
       </div>
     </header>
     <main><slot /></main>
-    <footer>© {new Date().getFullYear()} 蝙蝠 · 认真生活，缓慢生长。</footer>
   </body>
 </html>
 
@@ -41,10 +40,9 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
   h1,h2,h3 { color:var(--title); font-family:'Merriweather','Noto Serif SC',Georgia,serif; font-weight:700; }
   .site-header { max-width:740px; min-height:132px; margin:auto; padding:48px 24px 26px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
-  .brand { position:relative; display:inline-block; background:linear-gradient(100deg,var(--blood-shadow) 0%,var(--blood-mid) 16%,var(--blood-highlight) 28%,var(--blood-mid) 40%,var(--blood-shadow) 55%,var(--blood-highlight) 70%,var(--blood-mid) 84%,var(--blood-shadow) 100%); background-size:260% 100%; background-clip:text; -webkit-background-clip:text; color:transparent; filter:drop-shadow(0 1px 0 rgba(87,0,6,.28)); font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.85rem; font-weight:900; letter-spacing:-.055em; animation:blood-flow 3.4s linear infinite; }
+  .brand { position:relative; display:inline-block; background-image:url('/blood-veins.png'),linear-gradient(180deg,var(--blood-mid),var(--blood-shadow)); background-position:center,center; background-size:118px 118px,100% 100%; background-repeat:repeat,no-repeat; background-blend-mode:screen,normal; background-clip:text; -webkit-background-clip:text; color:transparent; filter:drop-shadow(0 1px 0 rgba(87,0,6,.28)); font-family:'Montserrat','Noto Serif SC',sans-serif; font-size:1.85rem; font-weight:900; letter-spacing:-.055em; }
   .brand::after { position:absolute; left:-8px; bottom:-22px; width:132px; height:26px; background:url('/blood-smear.png') center/contain no-repeat; content:''; opacity:.68; pointer-events:none; transform-origin:center; animation:blood-pulse 3.4s ease-in-out infinite; }
-  .brand span { color:var(--accent); }
-  @keyframes blood-flow { from { background-position:100% 50%; } to { background-position:-160% 50%; } }
+  .brand span { position:relative; z-index:2; color:var(--accent); }
   @keyframes blood-pulse { 0%,100% { opacity:.55; transform:scaleX(.98); } 50% { opacity:.82; transform:scaleX(1.03); } }
   .header-right { display:flex; flex-direction:column; align-items:flex-end; gap:9px; }
   .author { display:flex; align-items:center; gap:8px; color:var(--title); font-size:.88rem; }
@@ -55,12 +53,11 @@ const { title = '留白 · 个人博客', description = '记录思考、学习�
   nav a { color:var(--muted); }
   nav a:hover { color:var(--accent); }
   main { max-width:740px; min-height:calc(100vh - 210px); margin:auto; padding:18px 24px 76px; }
-  footer { max-width:740px; margin:auto; padding:28px 24px 42px; color:var(--muted); font-size:.72rem; text-align:left; }
   .eyebrow { color:var(--muted); font-size:.72rem; letter-spacing:.04em; text-transform:uppercase; }
   .tag { display:inline-block; margin-right:10px; color:var(--accent); font-size:.75rem; }
   .tag::before { content:'#'; }
   .tag:hover { text-decoration:underline; text-underline-offset:3px; }
   @media (prefers-color-scheme:dark) { :root { --ink:rgba(255,255,255,.88); --title:#fff; --muted:#aab0bb; --paper:#282c35; --accent:#e14a50; --accent-hover:#ff6a70; --accent-soft:rgba(225,74,80,.15); --code-bg:#191d27; --inline-code-bg:rgba(225,74,80,.14); --inline-code-text:#ffd9da; --blood-highlight:#ff4a42; --blood-mid:#d8141c; --blood-shadow:#69050b; } body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; } .author img { border-color:rgba(225,74,80,.55); } }
-  @media (max-width:600px) { .site-header { min-height:118px; padding:34px 20px 20px; } .brand { font-size:1.55rem; } .brand::after { width:108px; bottom:-20px; } .header-right { gap:7px; } .author { gap:6px; font-size:.78rem; } .author img { width:38px; height:38px; } nav { gap:12px; font-size:.72rem; } main { padding:12px 20px 58px; } footer { padding:24px 20px 34px; } }
+  @media (max-width:600px) { .site-header { min-height:118px; padding:34px 20px 20px; } .brand { font-size:1.55rem; } .brand::after { width:108px; bottom:-20px; } .header-right { gap:7px; } .author { gap:6px; font-size:.78rem; } .author img { width:38px; height:38px; } nav { gap:12px; font-size:.72rem; } main { padding:12px 20px 58px; } }
   @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition:none !important; animation:none !important; } }
 </style>
