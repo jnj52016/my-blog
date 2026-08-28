@@ -20,8 +20,23 @@ const { Content } = await render(post);
   </article>
 </BaseLayout>
 <style>
-  .post { max-width:720px; margin:24px auto; } .back { color:var(--muted); font-size:.88rem; }
-  .eyebrow { margin:60px 0 12px; } h1 { font-size:clamp(2.3rem,5vw,4rem); letter-spacing:-.055em; line-height:1.28; margin:0; }
-  .lead { color:var(--muted); font-size:1.14rem; margin:18px 0; } .tags { margin-bottom:52px; }
-  .content { font-size:1.08rem; } .content :global(p) { margin:0 0 24px; }
+  .post { max-width:740px; margin:30px auto; }
+  .back { color:var(--muted); font:.76rem 'DM Mono',monospace; letter-spacing:.04em; }
+  .back:hover { color:var(--accent); }
+  .eyebrow { margin:66px 0 14px; }
+  h1 { max-width:700px; font-size:clamp(2.8rem,6vw,5rem); letter-spacing:-.025em; line-height:1.12; margin:0; }
+  .lead { max-width:660px; color:var(--muted); font-size:1.12rem; margin:24px 0; padding-left:18px; border-left:2px solid var(--accent); }
+  .tags { margin-bottom:58px; }
+  .content { padding-top:44px; border-top:1px solid var(--line-strong); font-size:1.06rem; }
+  .content :global(p) { margin:0 0 26px; }
+  .content :global(h2) { margin:56px 0 18px; font-size:2rem; line-height:1.35; }
+  .content :global(h3) { margin:42px 0 14px; font-size:1.45rem; line-height:1.4; }
+  .content :global(a) { color:var(--accent); border-bottom:1px solid rgba(242,194,48,.35); }
+  .content :global(a:hover) { border-color:var(--accent); }
+  .content :global(blockquote) { margin:34px 0; padding:18px 22px; border-left:2px solid var(--accent); background:var(--surface); color:var(--muted); }
+  .content :global(code) { border:1px solid var(--line); border-radius:2px; background:var(--surface-raised); padding:.12em .38em; color:#f1d96f; font-family:'DM Mono',monospace; font-size:.86em; }
+  .content :global(pre) { overflow-x:auto; margin:32px 0; padding:22px; border:1px solid var(--line); border-top-color:var(--accent); background:#0c0f13; }
+  .content :global(pre code) { border:0; background:none; padding:0; color:inherit; }
+  .content :global(hr) { margin:52px 0; border:0; border-top:1px solid var(--line); }
+  @media (max-width:600px) { .eyebrow { margin-top:48px; } h1 { font-size:clamp(2.5rem,13vw,3.8rem); } .content { padding-top:36px; } }
 </style>

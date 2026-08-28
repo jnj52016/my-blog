@@ -5,11 +5,6 @@ import { formatDate } from '../lib/date';
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 <BaseLayout>
-  <section class="hero">
-    <p class="eyebrow">Personal notes / since 2026</p>
-    <h1>把日子写成<br /><em>自己的答案。</em></h1>
-    <p>这里记录思考、学习和那些正在发生的创造。</p>
-  </section>
   <section class="posts" aria-label="文章列表">
     <p class="eyebrow">Latest writing</p>
     {posts.map((post) => (
@@ -23,13 +18,14 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueO
   </section>
 </BaseLayout>
 <style>
-  .hero { padding:55px 0 88px; border-bottom:1px solid var(--line); }
-  h1 { font-size:clamp(2.7rem, 6vw, 5rem); line-height:1.25; letter-spacing:-.06em; margin:14px 0 18px; }
-  h1 em { color:var(--accent); font-style:normal; }
-  .hero > p:last-child { color:var(--muted); font-size:1.08rem; }
-  .posts { max-width:720px; padding-top:55px; }
-  article { padding:30px 0 34px; border-bottom:1px solid var(--line); }
-  .meta { color:var(--muted); font:.75rem 'DM Mono', monospace; }
-  h2 { font-size:1.65rem; margin:8px 0 4px; line-height:1.45; } h2 a:hover { color:var(--accent); }
-  article p { color:var(--muted); margin:0 0 14px; }
+  .posts { max-width:760px; padding-top:34px; }
+  article { position:relative; padding:32px 28px 36px; border-bottom:1px solid var(--line); transition:background-color .22s ease,transform .22s ease; }
+  article::before { position:absolute; top:0; bottom:0; left:0; width:2px; background:var(--accent); content:''; opacity:0; transform:scaleY(.35); transition:opacity .22s ease,transform .22s ease; }
+  article:hover { background:linear-gradient(90deg,var(--accent-soft),transparent 72%); transform:translateX(4px); }
+  article:hover::before { opacity:1; transform:scaleY(1); }
+  .meta { color:var(--muted); font:.7rem 'DM Mono',monospace; letter-spacing:.08em; }
+  h2 { font-size:clamp(1.7rem,3vw,2.15rem); letter-spacing:.01em; margin:8px 0 6px; line-height:1.35; }
+  h2 a:hover { color:var(--accent); }
+  article p { color:var(--muted); margin:0 0 17px; }
+  @media (max-width:600px) { .posts { padding-top:20px; } article { padding:26px 12px 30px; } }
 </style>

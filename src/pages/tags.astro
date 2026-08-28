@@ -7,4 +7,9 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
 <BaseLayout title="标签 · 留白">
   <section class="page"><p class="eyebrow">Topics</p><h1>标签</h1><div class="tags">{tags.map(tag => <a id={tag} class="tag" href={`#${tag}`}>{tag}</a>)}</div></section>
 </BaseLayout>
-<style>.page { max-width:720px; margin:40px auto; } h1 { font-size:3rem; margin:5px 0 28px; } .tag { margin-bottom:10px; }</style>
+<style>
+  .page { max-width:720px; margin:54px auto; padding:42px 0; border-top:1px solid var(--line-strong); border-bottom:1px solid var(--line); }
+  h1 { font-size:clamp(3rem,7vw,5rem); line-height:1.1; margin:10px 0 34px; }
+  .tags { display:flex; flex-wrap:wrap; gap:10px; }
+  .tag { margin:0; padding:7px 13px; }
+</style>
