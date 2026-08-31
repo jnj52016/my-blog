@@ -1,9 +1,11 @@
 ---
 title: 想试一试 raft.build
-description: ""
+description: 可以用这个写视频文案，也可以用这个做计算机工作
 pubDate: 2026-08-32T17:33:22+08:00
 updatedDate: 2026-08-31T17:33:22+08:00
-tags: []
+tags:
+  - "#视频"
+  - 技术栈
 ---
 想用一用，方便我写视频文案和计算机工作。
 
