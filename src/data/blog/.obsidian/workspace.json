@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前后端项目部署学习.md",
+                "file": "大型项目 OpenAPI 协作与演进学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前后端项目部署学习"
+              "title": "大型项目 OpenAPI 协作与演进学习"
             }
           }
         ],
@@ -225,15 +225,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b33d11de244a52b",
+  "active": "285a32cc3d9deb7a",
   "lastOpenFiles": [
+    "我的技术栈.md",
+    "前后端项目部署学习.md",
     "大型项目 OpenAPI 协作与演进学习.md",
     "分布式积分账务系统学习.md",
-    "前后端项目部署学习.md",
     "页面设计学习1.md",
     "学习一下测试.md",
     "想试一试 raft.build.md",
-    "我的技术栈.md",
     "模板/新文章.md",
     "2026-08-31.md",
     "模板",
