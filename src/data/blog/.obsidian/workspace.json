@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作一个月的总结.md",
+                "file": "想试一试 raft.build.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "工作一个月的总结"
+              "title": "想试一试 raft.build"
             }
           }
         ],
@@ -225,10 +225,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b33d11de244a52b",
+  "active": "285a32cc3d9deb7a",
   "lastOpenFiles": [
-    "我的技术栈.md",
     "工作一个月的总结.md",
+    "我的技术栈.md",
     "模板/新文章.md",
     "想试一试 raft.build.md",
     "大型项目 OpenAPI 协作与演进学习.md",
