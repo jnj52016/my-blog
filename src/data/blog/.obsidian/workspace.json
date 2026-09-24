@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "我要掌握什么吗？.md",
+                "file": "工作一个月的总结.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "我要掌握什么吗？"
+              "title": "工作一个月的总结"
             }
           }
         ],
@@ -225,15 +225,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "285a32cc3d9deb7a",
+  "active": "3b33d11de244a52b",
   "lastOpenFiles": [
+    "我的技术栈.md",
+    "工作一个月的总结.md",
     "模板/新文章.md",
-    "我要掌握什么吗？.md",
     "想试一试 raft.build.md",
     "大型项目 OpenAPI 协作与演进学习.md",
     "分布式积分账务系统学习.md",
     "前后端项目部署学习.md",
-    "我的技术栈.md",
     "学习一下测试.md",
     "页面设计学习1.md",
     "2026-08-31.md",
