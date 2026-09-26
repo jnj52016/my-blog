@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai 做页面.md",
+                "file": "工作一个月的总结.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ai 做页面"
+              "title": "工作一个月的总结"
             }
           }
         ],
@@ -227,8 +227,8 @@
   },
   "active": "285a32cc3d9deb7a",
   "lastOpenFiles": [
-    "工作一个月的总结.md",
     "ai 做页面.md",
+    "工作一个月的总结.md",
     "Pasted image 20260924131748.png",
     "想试一试 raft.build.md",
     "我的技术栈.md",
