@@ -1,5 +1,5 @@
 ---
-title: 未命名
+title: 前端做页面
 description: 用 ai 做页面嘛，剩下的时间耍起。
 pubDate: 2026-09-26T11:37:12+08:00
 updatedDate: 2026-09-26T11:37:12+08:00
