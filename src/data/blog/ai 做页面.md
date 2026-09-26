@@ -13,6 +13,11 @@ tags:
 我有个麻花的设计本领。
 
 我去找了找方案，看到了原子能的视频，讲用 ai 复刻其他网站的设计。
+视频链接：
+https://www.bilibili.com/video/BV1TNaP6MEUJ/?spm_id_from=333.337.search-card.all.click
+
 不过，我不喜欢豆包工作。
 于是，我做了一个skills，给 opencode 使用。
 也算完成了任务，效果其实还不错。
+
+
