@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "最简单的入门法则.md",
+                "file": "想试一试 raft.build.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "最简单的入门法则"
+              "title": "想试一试 raft.build"
             }
           }
         ]
@@ -196,11 +196,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b33d11de244a52b",
+  "active": "2a34ddb33c4e88fb",
   "lastOpenFiles": [
-    "最简单的学习.md",
-    "最简单的入门法则.md",
     "ai 做页面.md",
+    "最简单的入门法则.md",
+    "最简单的学习.md",
     "想试一试 raft.build.md",
     "我的技术栈.md",
     "未命名.base",
