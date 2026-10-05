@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "086d933a7a2d1c58",
+        "id": "9b07a5981a9922c7",
         "type": "tabs",
         "children": [
           {
-            "id": "8f77eed38ce11f9d",
+            "id": "2a34ddb33c4e88fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习一下测试.md",
+                "file": "最简单的入门法则.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "学习一下测试"
-            }
-          },
-          {
-            "id": "7d0b1548e794dc7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "页面设计学习1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "页面设计学习1"
-            }
-          },
-          {
-            "id": "285a32cc3d9deb7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "未命名"
+              "title": "最简单的入门法则"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,12 +196,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "285a32cc3d9deb7a",
+  "active": "2a34ddb33c4e88fb",
   "lastOpenFiles": [
-    "不知道做什么内容.md",
-    "未命名.md",
-    "工作一个月的总结.md",
     "ai 做页面.md",
+    "最简单的入门法则.md",
+    "未命名.base",
+    "最简单的学习.md",
+    "不知道做什么内容.md",
+    "工作一个月的总结.md",
     "Pasted image 20260924131748.png",
     "想试一试 raft.build.md",
     "我的技术栈.md",
