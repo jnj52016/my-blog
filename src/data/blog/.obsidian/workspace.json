@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "照顾观众的体验.md",
+                "file": "内存是如何发现地址的.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "照顾观众的体验"
+              "title": "内存是如何发现地址的"
             }
           }
         ]
@@ -199,17 +199,18 @@
   },
   "active": "2a34ddb33c4e88fb",
   "lastOpenFiles": [
+    "ai 做页面.md",
+    "内存是如何发现地址的.md",
+    "不知道做什么内容.md",
+    "工作一个月的总结.md",
+    "我的技术栈.md",
+    "想试一试 raft.build.md",
+    "寻找学习视角.md",
     "寻找知识区视频视角.md",
     "照顾观众的体验.md",
     "最简单的入门法则.md",
-    "ai 做页面.md",
     "未命名.base",
-    "寻找学习视角.md",
-    "想试一试 raft.build.md",
-    "工作一个月的总结.md",
     "有点怠惰，所以坚持直播吧.md",
-    "不知道做什么内容.md",
-    "我的技术栈.md",
     "最简单的学习.md",
     "Pasted image 20260924131748.png",
     "模板/新文章.md",
