@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "cpu 是如何运算的？.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "cpu 是如何运算的？"
             }
           }
         ]
@@ -200,7 +200,7 @@
   "active": "2a34ddb33c4e88fb",
   "lastOpenFiles": [
     "内存是如何发现地址的.md",
-    "未命名.md",
+    "cpu 是如何运算的？.md",
     "ai 做页面.md",
     "不知道做什么内容.md",
     "工作一个月的总结.md",
