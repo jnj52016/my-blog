@@ -10,12 +10,9 @@ tags:
 我要负责设计。
 但我有个麻花的设计本领。
 
-我去找了找方案，看到了原子能的视频，讲用 ai 复刻其他网站的设计。
-视频链接：
+我打算找一找设计 ai 方案。
 https://www.bilibili.com/video/BV1TNaP6MEUJ/?spm_id_from=333.337.search-card.all.click
 
-不过，我不喜欢豆包工作。
-于是，我做了一个skills，给 opencode 使用。
-也算完成了任务，效果其实还不错。
+[我们的氛围编码网站看起来就像设计师打造的样子 |铁路代码](https://railcode.dev/blog/vibe-coded-website)
 
 

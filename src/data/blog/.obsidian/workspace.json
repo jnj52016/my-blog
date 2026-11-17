@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代码是如何让程序运行的.md",
+                "file": "ai 做页面.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "代码是如何让程序运行的"
+              "title": "ai 做页面"
             }
           }
         ]
@@ -199,8 +199,8 @@
   },
   "active": "2a34ddb33c4e88fb",
   "lastOpenFiles": [
-    "cpu 是如何运算的？.md",
     "代码是如何让程序运行的.md",
+    "cpu 是如何运算的？.md",
     "内存是如何发现地址的.md",
     "ai 做页面.md",
     "不知道做什么内容.md",
